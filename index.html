@@ -6,18 +6,16 @@
     </head>
     <body>
         <div class="login-container">
-            <form action="/login" method="POST">
-               
-                <label for="usuario">Usuário:</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário">
+      <form action="cadastro.html" method="GET">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
 
-                <button type="submit">Entrar</button>
-                <button type="button">Sair</button>
-
-            </form>
+        <button type="submit">Entrar</button>
+        <button type="button" onclick="window.history.back()">Sair</button>
+      </form>
         </div>
     </body>
 </html>
